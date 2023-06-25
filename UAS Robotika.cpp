@@ -75,8 +75,8 @@ int main(int argc, char** argv)
     while (ros::ok()) {
     geometry_msgs::Twist twistMsg;
     // Set linear and angular velocities
-    twistMsg.linear.x = 0.5; // Contoh kecepatan linear maju 0.5 m/s
-    twistMsg.angular.z = 0.2; // Contoh kecepatan angular sebesar 0.2 rad/s
+    twistMsg.linear.x = 0.5; 
+    twistMsg.angular.z = 0.2; 
     twistPub.publish(twistMsg);
 
     ros::spinOnce();
